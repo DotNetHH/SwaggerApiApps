@@ -1,0 +1,551 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProductsApp</name>
+    </assembly>
+    <members>
+        <member name="M:ProductsApp.Controllers.VisitorController.GetVisitor(System.Int32)">
+            <summary>
+            Get a visitors by its Id
+            </summary>
+            <remarks>Get a visitors</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Visitor</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.VisitorController.AddVisitor(ProductsApp.Models.Visitor)">
+            <summary>
+            Add a visitors
+            </summary>
+            <remarks>Add a visitors</remarks>
+            <param name="visitors">Visitor visitors</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Visitor</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.VisitorController.UpdateVisitor(System.Int32,ProductsApp.Models.Visitor)">
+            <summary>
+            Update a visitors by its Id
+            </summary>
+            <remarks>Update a visitors</remarks>
+            <param name="id">int id</param>
+            <param name="visitors">Visitor visitors</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.VisitorController.DeleteVisitor(System.Int32)">
+            <summary>
+            Delete a visitors by its Id
+            </summary>
+            <remarks>Delete a visitors</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.StatisticController.GetStatistic(System.Int32)">
+            <summary>
+            Get a statistic by its Id
+            </summary>
+            <remarks>Get a statistic</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Statistic</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.StatisticController.AddStatistic(ProductsApp.Models.Statistic)">
+            <summary>
+            Add a statistic
+            </summary>
+            <remarks>Add a statistic</remarks>
+            <param name="statistic">Statistic statistic</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Statistic</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.StatisticController.UpdateStatistic(System.Int32,ProductsApp.Models.Statistic)">
+            <summary>
+            Update a statistic by its Id
+            </summary>
+            <remarks>Update a statistic</remarks>
+            <param name="id">int id</param>
+            <param name="statistic">Statistic statistic</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.StatisticController.DeleteStatistic(System.Int32)">
+            <summary>
+            Delete a statistic by its Id
+            </summary>
+            <remarks>Delete a statistic</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.SatisfactionController.GetSatisfaction(System.Int32)">
+            <summary>
+            Get a satisfaction by its Id
+            </summary>
+            <remarks>Get a satisfaction</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Satisfaction</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.SatisfactionController.AddSatisfaction(ProductsApp.Models.Satisfaction)">
+            <summary>
+            Add a satisfaction
+            </summary>
+            <remarks>Add a satisfaction</remarks>
+            <param name="satisfaction">Satisfaction satisfaction</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Satisfaction</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.SatisfactionController.UpdateSatisfaction(System.Int32,ProductsApp.Models.Satisfaction)">
+            <summary>
+            Update a satisfaction by its Id
+            </summary>
+            <remarks>Update a satisfaction</remarks>
+            <param name="id">int id</param>
+            <param name="satisfaction">Satisfaction satisfaction</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.SatisfactionController.DeleteSatisfaction(System.Int32)">
+            <summary>
+            Delete a satisfaction by its Id
+            </summary>
+            <remarks>Delete a satisfaction</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.TransactionController.GetTransaction(System.Int32)">
+            <summary>
+            Get a transaction by its Id
+            </summary>
+            <remarks>Get a transaction</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Transaction</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.TransactionController.AddTransaction(ProductsApp.Models.Transaction)">
+            <summary>
+            Add a transaction
+            </summary>
+            <remarks>Add a transaction</remarks>
+            <param name="transaction">Transaction transaction</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Transaction</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.TransactionController.UpdateTransaction(System.Int32,ProductsApp.Models.Transaction)">
+            <summary>
+            Update a transaction by its Id
+            </summary>
+            <remarks>Update a transaction</remarks>
+            <param name="id">int id</param>
+            <param name="transaction">Transaction transaction</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.TransactionController.DeleteTransaction(System.Int32)">
+            <summary>
+            Delete a transaction by its Id
+            </summary>
+            <remarks>Delete a transaction</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.TagController.GetTag(System.Int32)">
+            <summary>
+            Get a tag by its Id
+            </summary>
+            <remarks>Get a tag</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Tag</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.TagController.AddTag(ProductsApp.Models.Tag)">
+            <summary>
+            Add a tag
+            </summary>
+            <remarks>Add a tag</remarks>
+            <param name="tag">Tag tag</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Tag</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.TagController.UpdateTag(System.Int32,ProductsApp.Models.Tag)">
+            <summary>
+            Update a tag by its Id
+            </summary>
+            <remarks>Update a tag</remarks>
+            <param name="id">int id</param>
+            <param name="tag">Tag tag</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.TagController.DeleteTag(System.Int32)">
+            <summary>
+            Delete a tag by its Id
+            </summary>
+            <remarks>Delete a tag</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.ConversationController.GetConversation(System.Int32)">
+            <summary>
+            Get a conversations by its Id
+            </summary>
+            <remarks>Get a conversations</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Conversation</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.ConversationController.AddConversation(ProductsApp.Models.Conversation)">
+            <summary>
+            Add a conversations
+            </summary>
+            <remarks>Add a conversations</remarks>
+            <param name="conversations">Conversation conversations</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Conversation</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.ConversationController.UpdateConversation(System.Int32,ProductsApp.Models.Conversation)">
+            <summary>
+            Update a conversations by its Id
+            </summary>
+            <remarks>Update a conversations</remarks>
+            <param name="id">int id</param>
+            <param name="conversations">Conversation conversations</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.ConversationController.DeleteConversation(System.Int32)">
+            <summary>
+            Delete a conversations by its Id
+            </summary>
+            <remarks>Delete a conversations</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.SkillController.GetSkill(System.Int32)">
+            <summary>
+            Get a skill by its Id
+            </summary>
+            <remarks>Get a skill</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Skill</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.SkillController.AddSkill(ProductsApp.Models.Skill)">
+            <summary>
+            Add a skill
+            </summary>
+            <remarks>Add a skill</remarks>
+            <param name="skill">Skill skill</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Skill</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.SkillController.UpdateSkill(System.Int32,ProductsApp.Models.Skill)">
+            <summary>
+            Update a skill by its Id
+            </summary>
+            <remarks>Update a skill</remarks>
+            <param name="id">int id</param>
+            <param name="skill">Skill skill</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.SkillController.DeleteSkill(System.Int32)">
+            <summary>
+            Delete a skill by its Id
+            </summary>
+            <remarks>Delete a skill</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.GroupController.GetGroup(System.Int32)">
+            <summary>
+            Get a group by its Id
+            </summary>
+            <remarks>Get a group</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Group</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.GroupController.AddGroup(ProductsApp.Models.Group)">
+            <summary>
+            Add a group
+            </summary>
+            <remarks>Add a group</remarks>
+            <param name="group">Group group</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Group</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.GroupController.UpdateGroup(System.Int32,ProductsApp.Models.Group)">
+            <summary>
+            Update a group by its Id
+            </summary>
+            <remarks>Update a group</remarks>
+            <param name="id">int id</param>
+            <param name="group">Group group</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.GroupController.DeleteGroup(System.Int32)">
+            <summary>
+            Delete a group by its Id
+            </summary>
+            <remarks>Delete a group</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.OperatorController.GetOperator(System.Int32)">
+            <summary>
+            Get a operator by its Id
+            </summary>
+            <remarks>Get a operator</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Operator</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.OperatorController.AddOperator(ProductsApp.Models.Operator)">
+            <summary>
+            Add a operator
+            </summary>
+            <remarks>Add a operator</remarks>
+            <param name="operator">Operator operator</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Operator</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.OperatorController.UpdateOperator(System.Int32,ProductsApp.Models.Operator)">
+            <summary>
+            Update a operator by its Id
+            </summary>
+            <remarks>Update a operator</remarks>
+            <param name="id">int id</param>
+            <param name="operator">Operator operator</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.OperatorController.DeleteOperator(System.Int32)">
+            <summary>
+            Delete a operator by its Id
+            </summary>
+            <remarks>Delete a operator</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.ProductsController.GetAllProducts">
+            <summary>
+            Get all Products
+            </summary>
+            <remarks>Get all Products</remarks>
+            <response code="200">Ok</response>
+            <response code="500">Internal Server Error</response>
+            <returns>IEnumerable&lt;Product&gt;</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.ProductsController.GetProduct(System.Int32)">
+            <summary>
+            Get Product by id
+            </summary>
+            <param name="id">int ProductId</param>
+            <remarks>Get a Product</remarks>
+            <response code="200">Ok</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Product</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.ProductsController.AddProduct(ProductsApp.Models.Product)">
+            <summary>
+            add a Product
+            </summary>
+            <param name="product">Product productToBeAdded</param>
+            <remarks>Add a Product</remarks>
+            <response code="200">Ok</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.ProductsController.UpdateProduct(ProductsApp.Models.Product)">
+            <summary>
+            update a Product
+            </summary>
+            <param name="product">Product updatedProduct</param>
+            <remarks>Update a Product</remarks>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Product</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.ProductsController.DeleteProduct(System.Int32)">
+            <summary>
+            Delete a Product
+            </summary>
+            <param name="id">int ProductId</param>
+            <remarks>Delete a Product</remarks>
+            <response code="200">Ok</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.WebsiteController.GetWebsite(System.Int32)">
+            <summary>
+            Get a Website by its Id
+            </summary>
+            <remarks>Get a website</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Website</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.WebsiteController.AddWebsite(ProductsApp.Models.Website)">
+            <summary>
+            Add a Website
+            </summary>
+            <remarks>Add a website</remarks>
+            <param name="website">Website website</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Website</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.WebsiteController.UpdateWebsite(System.Int32,ProductsApp.Models.Website)">
+            <summary>
+            Update a Website by its Id
+            </summary>
+            <remarks>Update a website</remarks>
+            <param name="id">int id</param>
+            <param name="website">Website website</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:ProductsApp.Controllers.WebsiteController.DeleteWebsite(System.Int32)">
+            <summary>
+            Delete a Website by its Id
+            </summary>
+            <remarks>Delete a website</remarks>
+            <param name="id">int id</param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+    </members>
+</doc>

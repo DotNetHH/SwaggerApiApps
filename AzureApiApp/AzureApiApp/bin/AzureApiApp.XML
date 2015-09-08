@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AzureApiApp</name>
+    </assembly>
+    <members>
+        <member name="M:AzureApiApp.Controllers.MailController.SendMail(System.String)">
+            <summary>
+            Send a mail to customer
+            </summary>
+            <remarks>Send a mail to customer</remarks>
+            <response code="200">Ok</response>
+            <response code="404">Bad Request</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:AzureApiApp.Controllers.UserController.GetAllUsers">
+            <summary>
+            Get all Users
+            </summary>
+            <remarks>Get all Users for the Email service</remarks>
+            <response code="200">Ok</response>
+            <response code="404">Bad Request</response>
+            <response code="500">Internal Server Error</response>
+            <returns>IEnumerable&lt;User&gt;</returns>
+        </member>
+        <member name="M:AzureApiApp.Controllers.UserController.SignupUser(AzureApiApp.Models.User)">
+            <summary>
+            Signup a User
+            </summary>
+            <param name="user">User user</param>
+            <remarks>Sign up a User for the Email service</remarks>
+            <response code="200">Ok</response>
+            <response code="404">Bad Request</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:AzureApiApp.Controllers.UserController.UpdateUser(AzureApiApp.Models.User)">
+            <summary>
+            Update a User
+            </summary>
+            <param name="user">User user</param>
+            <remarks>Update a User for the Email service</remarks>
+            <response code="200">Ok</response>
+            <response code="404">Bad Request</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+        <member name="M:AzureApiApp.Controllers.UserController.DeleteUser(AzureApiApp.Models.User)">
+            <summary>
+            Remove a User
+            </summary>
+            <param name="user">User user</param>
+            <remarks>Remove a User for the Email service</remarks>
+            <response code="200">Ok</response>
+            <response code="404">Bad Request</response>
+            <response code="500">Internal Server Error</response>
+            <returns>void</returns>
+        </member>
+    </members>
+</doc>
